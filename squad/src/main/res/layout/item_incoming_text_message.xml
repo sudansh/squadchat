@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_default"
+    android:layout_marginEnd="60dp"
+    android:paddingTop="8dp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@id/messageUserAvatar"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+
+    <TextView
+        android:id="@+id/messageText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_default"
+        android:autoLink="all"
+        android:background="@drawable/shape_incoming_message"
+        android:textColor="#141414"
+        app:layout_constraintBottom_toBottomOf="@id/messageUserAvatar"
+        app:layout_constraintStart_toEndOf="@id/messageUserAvatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@tools:sample/lorem/random" />
+
+    <View
+        android:id="@id/imageOverlay"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/item_selector"
+        app:layout_constraintBottom_toBottomOf="@id/messageText"
+        app:layout_constraintEnd_toEndOf="@id/messageText"
+        app:layout_constraintStart_toStartOf="@id/messageText"
+        app:layout_constraintTop_toTopOf="@id/messageText" />
+</androidx.constraintlayout.widget.ConstraintLayout>

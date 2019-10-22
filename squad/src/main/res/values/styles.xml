@@ -1,0 +1,21 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!--        <item name="android:background">#ffffff</item>-->
+        <item name="colorPrimary">#FFF</item>
+        <item name="android:statusBarColor">#f3fafafa</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="toolbarStyle">@style/AppToolbarStyle</item>
+    </style>
+
+    <style name="AppToolbarStyle" parent="Widget.MaterialComponents.Toolbar">
+        <item name="android:background">#f3fafafa</item>
+        <item name="titleTextAppearance">@style/ToolbarTextView</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="ToolbarTextView" parent="android:Widget.TextView">
+        <item name="android:textSize">14sp</item>
+    </style>
+</resources>

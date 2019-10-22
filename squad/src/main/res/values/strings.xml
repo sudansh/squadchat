@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Squad Chat</string>
+
+    <string name="hint_enter_a_message">Type a message…</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_copy">Copy</string>
+    <string name="copied_message">Message copied!</string>
+
+    <string name="date_header_today">Today</string>
+    <string name="date_header_yesterday">Yesterday</string>
+    <string name="video">video</string>
+    <string name="phone">phone</string>
+
+</resources>

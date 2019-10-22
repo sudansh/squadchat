@@ -1,0 +1,9 @@
+<resources>
+
+    <item name="bubble" type="id" />
+    <item name="messageText" type="id" />
+    <item name="messageUserAvatar" type="id" />
+    <item name="image" type="id" />
+    <item name="imageOverlay" type="id" />
+
+</resources>
