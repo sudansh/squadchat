@@ -94,8 +94,6 @@ open class MessagesListAdapter<MESSAGE : IMessage>(private val senderId: String,
         val isNewMessageToday = !isPreviousSameDate(0, message.createdAt)
         if (isNewMessageToday) {
             items.add(0, Wrapper(message.createdAt))
-        } else if (items.size % 6 == 0) {
-            items.add(0, Wrapper(message.createdAt))
         }
         val element = Wrapper(message)
         items.add(0, element)
